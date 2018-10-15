@@ -1,17 +1,14 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+import VueRouter from 'vue-router';
+import App from './App.vue';
+import router from './router';
 
-Vue.config.productionTip = false
-
-// Bootstrap
-Vue.use(BootstrapVue)
+Vue.use(Vuetify);
+Vue.use(VueRouter);
 
 new Vue({
+    el: '#app',
     router,
-    render: h => h(App)
-}).$mount('#app')
-
+    render: h => h(App),
+});
